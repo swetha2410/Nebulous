@@ -1,0 +1,45 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		article
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+<header class="wrapper">
+<h1 class="nebula"><a href="{% url 'home' %}"><b>NEBULOUS</b></a></h1>
+<nav>
+	<ul>
+	{% if user.is_authenticated %}
+		<li>
+			<form class="logout-link" action="{% url 'accounts:logout' %}" method="POST">
+			{% csrf_token %}
+			<button type="Submit">LOGOUT</button>
+			</form>
+		</li>
+		<li><form class="logout-link" action="{% url 'articles:create' %}" method="POST">
+			{% csrf_token %}
+			<button type="Submit">NEW ARTICLE</button>
+			</form>
+		</li>
+	{% else %}
+	<li><form class="logout-link" action="{% url 'accounts:login' %}" method="POST">
+			{% csrf_token %}
+			<button type="Submit">LOGIN</button>
+			</form></li>
+	<li><form class="logout-link" action="{% url 'accounts:signup' %}" method="POST">
+			{% csrf_token %}
+			<button type="Submit">SIGNUP</button>
+			</form></li>
+	{% endif %}
+	</ul>
+</nav>
+</header>
+<div class="wrapper">
+	{% block content %}
+	{% endblock %}
+</div>
+</body>
+</html>

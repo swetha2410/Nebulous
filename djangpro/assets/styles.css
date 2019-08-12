@@ -1,0 +1,202 @@
+body{
+	//background-color: #0f121f;
+	background-repeat: no-repeat;
+	color:#fff;
+}
+html { 
+  background: url(coffees.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body *{
+	font-family: Ubuntu;
+}
+
+.wrapper{
+	max-width: 960px;
+	margin:0 ;
+}
+div.wrapper
+{
+	text-align:center;
+	margin:50px 0px 90px 0px;
+	font-size:1em;
+}
+header{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	padding:20px 0;
+}
+.wrapper nav{
+	justify-self:end;
+	top:4px;
+	right:1px;
+	position:fixed
+}
+nav li{
+	display:inline-block;
+	margin-left:20px;
+	font-size:20px;
+	background-color:#3A405A;
+	border: 1px solid #3A405A;
+	padding:5px;
+	border-radius:6px;
+}
+nav button{
+	background-color:none;
+	color:#fff
+	cursor: pointer;
+	border:0;
+	font-size:1em;
+}
+.articles{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:30px;
+}
+
+.article{
+	padding:0px;
+	position:relative;
+	padding-bottom:40px;
+	margin-left:0px;
+	margin:0px;
+	width:-webkit-fill-available
+}
+.article h2{
+	font-size:1.2em;
+}
+div.article_detail div.article{
+	padding:0;
+}
+div.article_detail div.article h2{
+	text-align:center;
+	margin:20px 20px ;
+	font-size:3em;
+}
+div.article_detail div.article p{
+	text-align:center;
+}
+div.wrapper p.art{
+	text-align:center;
+	font-size:2em;
+	margin:50px 10px 60px 250px
+}
+
+h1,h2,h3,h4{
+	font-weight: normal;
+	margin:0;
+}
+a,a:hover, a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+
+.article .author{
+	padding:10px;
+	background:grey;
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin:0;
+	color:#0f121f;
+	border-radius:10px;
+	
+}
+.site-form{
+	margin-top:auto;
+	border: 1px solid;
+	padding:20px;
+	height:auto;
+
+}
+.site-form input, site-form textarea{
+	display:block;
+	margin:10px 0 0 0;
+	padding:10px;
+}
+label{
+	display:block;
+	margin 20px 10px;
+	text-align:initial;
+	font-size:1.5em;
+	color:#C5C0C6;
+	text-decoration:underline
+
+}
+.wrapper h1{
+	height:100px;
+	font-family:unset;
+	text-decoration:solid underline;
+	font-size:3em;
+}
+a.highlight{
+	padding:10px;
+	fborder-radius:4px;
+}
+.helptext,.helptext ul{
+	margin:0 auto 20px;
+	color: #bbb;
+	font-size:0.9em;
+	display:block;
+}
+.errorlist{
+	padding:10px;
+	list-style-type:none;
+	border:1px solid #ff5722;
+	color: #ff5722;
+	margin: 10px 0;
+}
+.errorlist{
+	padding:0;
+}
+.site-form input[type="submit"]{
+	background:#3A405A;
+	border: 0;
+	color:#fff;
+	font-size:1.5em;
+	font-family:auto;
+	border-radius:5px;
+	margin:10px 0;
+}
+div.wrapper .create-article h2{
+	height:90px;
+	margin-left:10px;
+	padding-bottom:0px;
+}
+div.wrapper .site-form, div.wrapper .site-form input,div.wrapper .site-form textarea{
+	display:block;	
+}
+div.wrapper .site-form label{
+	margin:20px 0 10px 0;
+	font-size:1.8em;
+}
+div.wrapper .site-form label[for=id_title]{
+	margin:0px 0 10px 0;
+	font-size:1.8em;
+}
+h1.nebula{
+	margin:50px 20px 20px 500px;
+	height:40px;
+}
+div.article_detail div.article div.image img{
+   position: relative;
+  top: 10px;
+  left: 0%; 
+  width:100%;
+ image-position: 0 0; 
+ background-repeat:repeat;
+}
+}
+div.article_detail
+{
+	position:relative;
+	border:0px;
+}
+div.wrapper div.articles div.article{
+	border:2px solid black;
+	border-radius:8px;
+}
